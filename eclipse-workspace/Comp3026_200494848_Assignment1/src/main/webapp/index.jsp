@@ -12,11 +12,19 @@
 			<table style="width: 80%">
 				<tr>
 					<td>UserId</td>
-					<td><input type="text" name="userId" required /></td>
+					<td><input type="text" name="userId" pattern="[A-Za-z]{7,12}" required /></td>
 				</tr>
 				<tr>
 					<td>Password</td>
-					<td><input type="text" name="password" pattern="[0-9]{9}" required/></td>
+					<td><input type="password" name="password" pattern="[A-Za-z0-9]{7,12}" required/></td>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td><input type="text" name="name" pattern="[A-Za-z]{1,120}" required/></td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td><input type="text" name="address"  optional/></td>
 				</tr>
 				
 			</table>

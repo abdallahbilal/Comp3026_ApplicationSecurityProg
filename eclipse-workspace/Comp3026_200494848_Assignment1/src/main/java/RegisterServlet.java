@@ -38,13 +38,20 @@ public class RegisterServlet extends HttpServlet {
 		
 		String userId = request.getParameter("userId");
 		String password = request.getParameter("password");
+		String name = request.getParameter("name");
+		String address = request.getParameter("address");
 		
 		Register r = new Register();
 		r.setUserId(userId);
 		r.setPassword(password);
+		r.setName(name);
+		r.setName(address);
 		System.out.println(userId);
 		System.out.println(password);
+		System.out.println(name);
+		System.out.println(address);
 		
+
 		
 	}
 
